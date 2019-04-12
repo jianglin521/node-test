@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var mysql = require('mysql');
-var bodyParser = require('body-parser'); // 处理post数据
+var bodyParser = require('body-parser'); // 用于处理 JSON, Raw, Text 和 URL 编码的数据。
 
 app.use(bodyParser.json({limit: '1mb'}));  // 这里指定参数使用 json 格式
 app.use(bodyParser.urlencoded({
